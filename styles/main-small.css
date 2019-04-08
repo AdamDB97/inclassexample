@@ -1,0 +1,11 @@
+@media (max-width:600px){
+    .navigation-bar{
+        width:25%;
+        left:-25%; /*this tells it to slide off the page the 25% that it came in*/
+    }
+
+    .content{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

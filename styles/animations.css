@@ -1,0 +1,62 @@
+/*animation for our bottom card*/
+@keyframes fade-through-in{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+/*animation for our top card*/
+@keyframes fade-through-out{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+/*animation for our button*/
+@keyframes button-click{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*rotating the icon in*/
+@keyframes rotate-in{
+    0%{
+        opacity:0;
+        transform: rotate(0deg) scale(0);
+    }
+    100%{
+        opacity:1;
+        transform: rotate(360deg) scale(1);        
+    }
+}
+
+/*rotating the icon out*/
+@keyframes rotate-out{
+    0%{
+        opacity:1;
+        transform: rotate(0deg) scale(1);
+    }
+    100%{
+        opacity:0;
+        transform: rotate(360deg) scale(0);
+    }
+}

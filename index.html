@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Yosemite Valley</title>
+
+        <!--link to animations.css.    LOAD THESE FIRST-->
+        <link href="styles/animations.css"
+        rel="stylesheet"
+        type="text/css"> 
+        <!--link to main.css-->
+        <link href="styles/main.css" 
+        rel="stylesheet" 
+        type="text/css"> 
+        <!--link to main-small.css-->
+        <link href="styles/main-small.css"
+        rel="stylesheet"
+        type="text/css"> 
+
+        <!--links to fonts, icons-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web/dist/material-components-web.min.css">
+        
+        <!--Load jquery BEFORE the js file-->
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+        
+        <script src="js/javascript.js"></script> 
+    </head>
+    <body>
+
+        <!--App bar-->
+        <div class="app-bar elevation-2">
+            <div class="app-bar__brand">
+                <i id="menu" 
+                    class="fas fa-bars app-bar__icon"></i>
+                    <!--We've added id="menu" here for js-->
+                <span>Discover</span>
+            </div>
+                
+            <div class="app-bar__actions">
+                <i class="fas fa-map-marked-alt app-bar__icon"></i>
+                <i class="fas fa-street-view app-bar__icon"></i>
+                <i class="fas fa-images app-bar__icon"></i>
+            </div>
+        </div>
+
+        <!--Sidemap-->
+        <div id="navigation-bar" class="navigation-bar elevation-2 transition"></div>
+        <!--We had to add an ID here to select this element in js-->
+        <!--We also added 'transition' into the class to reference the css rule-->
+
+        <!--Content-->
+        <div id="content" class="content transition"> <!--Added ID for content for the js, transition for css-->
+
+            <!--Hero image-->
+            <div class="hero">
+                <div class="hero__falls"></div>
+                <div class="hero__overlay">
+                    <div class="overlay__title">YOSEMITE VALLEY</div>
+                </div>
+            </div>
+            
+            <!--Card (for fade transition demonstration)-->
+            <div class="card elevation-2">
+                <div class="card__red">
+                    Top Text
+                </div>
+                <div class="card__blue">
+                    Bottom Text
+                </div>
+            </div>
+
+            <!--Setting up transition for card; this is a trigger button in the bottom corner-->
+            <div id="button-card-transition"
+                class="elevation-2 transition">
+
+                <i id="icon-plus" class="fab__icon fas fa-plus"></i>
+                <i id="icon-return" class="fab__icon start-hidden fas fa-undo-alt"></i>
+            </div>
+
+            <div class="content__text"> <!--New class for just the text since our hero is included in the content-->
+                <h2>ABOUT</h2>
+                <p>
+                    Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
+                    First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.
+                </p>
+                <div class="center-align">
+                    <button class="mdc-button mdc-button--outlined">Learn More</button>
+                </div>
+                <br><br>
+                <hr>
+
+                <h3>TUNNEL VIEW</h3>
+                <div class="img__thumb">
+                    <a href="Images/Main-TunnelView-1280x853.jpg">
+                        <img title="Tunnel View" src="Images/Main-TunnelView-300x200.jpg">
+                    </a>
+                </div>
+                <p>
+                    Tunnel View provides one of the most famous views of Yosemite Valley. From here you can see El Capitan and Bridalveil Fall rising from Yosemite Valley, with Half Dome in the background. This viewpoint is at the east end of the Wawona Tunnel along the Wawona Road (Highway 41).
+                </p>
+                <div class="center-align">
+                    <button class="mdc-button mdc-button--outlined">Learn More</button>
+                </div>
+                <br><br>
+                <hr>
+
+                <h3>GLACIER POINT</h3>
+                <div class="img__thumb">
+                    <a href="Images/Main-GlacierPoint-1280x853.jpg">
+                        <img title="Glacier Point" src="Images/Main-GlacierPoint-300x200.jpg">
+                    </a>
+                </div>
+                <p>
+                    Glacier Point, some would say, is the most spectacular viewpoint anywhere. Most people agree that its views of the high country and breathtaking views of Yosemite Valley, including Half Dome and three waterfalls, are the most spectacular in the park. Washburn Point, just south of Glacier Point, has similar views, though the views of Vernal and Nevada Falls are a bit better. The road to Glacier Point is usually open late May or early June to sometime in November, though some people prefer to ski there in the winter.
+                </p>
+                <div class="center-align">
+                    <button class="mdc-button mdc-button--outlined">Learn More</button>
+                </div>
+                <br><br>
+                <hr>
+
+                <h3>YOSEMITE FALLS</h3>
+                <div class="img__thumb">
+                    <a href="Images/Main-YosemiteFalls-1280x853.jpg">
+                        <img title="Yosemite Falls" src="Images/Main-YosemiteFalls-300x200.jpg">
+                    </a>
+                </div>
+                <p>
+                Yosemite Falls, one of the world's tallest, is actually made up of three separate falls: Upper Yosemite Fall (1,430 feet), the middle cascades (675 feet), and Lower Yosemite Fall (320 feet). A one-mile loop trail leads to the base of Lower Yosemite Fall (the eastern side of the loop, from the shuttle stop to the base of the waterfall, is wheelchair accessible).
+                </p>
+                <div class="center-align">
+                    <button class="mdc-button mdc-button--outlined">Learn More</button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
